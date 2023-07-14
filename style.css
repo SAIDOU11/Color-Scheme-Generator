@@ -2,18 +2,21 @@ html,
 body {
   margin: 0;
   padding: 0;
-  /* min-width: 550px; */
+  min-width: 550px;
   font-family: "Inter", sans-serif;
 }
 
-header {
+header,
+main {
   margin: 1.3em 1em;
 }
 
 .head-container {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   gap: 0.5em;
+  width: 100%;
 }
 
 .color-picker,
@@ -24,7 +27,14 @@ header {
 }
 
 .color-picker {
-  width: 65px;
+  width: 15%;
+}
+
+.color-picker input {
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 100%;
 }
 
 .select-menu {
@@ -33,7 +43,24 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 300px;
+  width: 50%;
+}
+
+.dropdown {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-color {
+  display: block;
+}
+
+.scheme-color {
+  border: none;
+  height: 100%;
+  color: gray;
 }
 
 .icon {
@@ -42,13 +69,47 @@ header {
   cursor: pointer;
 }
 
-.get-btn button {
-  height: 100%;
-  width: 125px;
+.get-btn {
+  width: 25%;
 }
 
-button {
+.get-btn button {
+  height: 100%;
+  width: 100%;
+  font-family: "Inter", sans-serif;
   background-color: #fff;
   padding: 0;
-  font-family: "Inter", sans-serif;
+}
+
+/* main */
+
+.colors-container {
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+}
+
+.colors-palet {
+  height: 450px;
+}
+
+.color,
+.color-two,
+.color-three,
+.color-four,
+.color-five {
+  height: 100%;
+  width: 100%;
+}
+
+.color {
+  background-color: #a41d1d;
+}
+
+.color-two {
+  background-color: #474796;
+}
+
+.hex {
+  height: 100px;
 }
