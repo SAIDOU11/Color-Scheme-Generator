@@ -8,7 +8,7 @@ body {
 
 header,
 main {
-  margin: 2em 1em;
+  margin: 2em 1em 1.5em 1em;
 }
 
 /* header */
@@ -40,43 +40,37 @@ main {
 }
 
 .dropdown {
-  padding: 0 0.5em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 0 0.5em;
   width: 50%;
+  cursor: pointer;
 }
 
 .mode-color {
   text-transform: capitalize;
 }
 
-.dropdown {
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.dropdown .mode-color,
-.dropdown select {
-  outline: none;
-  width: 100%;
-}
-
 .list-color {
-  display: block;
+  display: none;
+  margin-left: 4.2em;
+  margin-bottom: 0;
 }
 
-.scheme-color {
-  border: none;
-  height: 100%;
-  color: gray;
+.list-color li {
+  margin: 0.2em;
+  cursor: pointer;
+  width: 60%;
+}
+
+.icon {
+  color: grey;
 }
 
 .get-btn {
-  width: 25%;
+  width: 30%;
 }
 
 .get-btn button {

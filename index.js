@@ -1,5 +1,13 @@
 let colors = [];
 
+document.getElementById("dropdown").addEventListener("click", () => {
+  const list = document.querySelector(".list-color");
+  list.style.display = "block";
+  // if (list.style.display === "block") {
+  //   list.style.display = "none";
+  // }
+});
+
 function render() {
   document.getElementById("colors-container").innerHTML = colors
     .map((color) => {
