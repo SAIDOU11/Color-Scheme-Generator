@@ -8,8 +8,10 @@ body {
 
 header,
 main {
-  margin: 1.3em 1em;
+  margin: 2em 1em;
 }
+
+/* header */
 
 .head-container {
   display: flex;
@@ -20,7 +22,7 @@ main {
 }
 
 .color-picker,
-.select-menu,
+.dropdown,
 .get-btn button {
   border: 2px solid #d1d5db;
   height: 50px;
@@ -37,7 +39,7 @@ main {
   height: 100%;
 }
 
-.select-menu {
+.dropdown {
   padding: 0 0.5em;
   display: flex;
   flex-direction: row;
@@ -46,11 +48,21 @@ main {
   width: 50%;
 }
 
+.mode-color {
+  text-transform: capitalize;
+}
+
 .dropdown {
   position: relative;
   width: 100%;
   display: flex;
   justify-content: space-between;
+}
+
+.dropdown .mode-color,
+.dropdown select {
+  outline: none;
+  width: 100%;
 }
 
 .list-color {
@@ -63,17 +75,12 @@ main {
   color: gray;
 }
 
-.icon {
-  font-size: 1.2rem;
-  color: grey;
-  cursor: pointer;
-}
-
 .get-btn {
   width: 25%;
 }
 
 .get-btn button {
+  cursor: pointer;
   height: 100%;
   width: 100%;
   font-family: "Inter", sans-serif;
@@ -91,25 +98,20 @@ main {
 
 .colors-palet {
   height: 450px;
-}
-
-.color,
-.color-two,
-.color-three,
-.color-four,
-.color-five {
-  height: 100%;
-  width: 100%;
+  width: 20%;
 }
 
 .color {
-  background-color: #a41d1d;
+  height: 100%;
 }
 
-.color-two {
-  background-color: #474796;
-}
+/* .color {
+  background-color: #a41d1d;
+} */
 
 .hex {
-  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
 }

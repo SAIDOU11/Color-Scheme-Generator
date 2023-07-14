@@ -24,18 +24,14 @@
           <label for="color"></label>
           <input type="color" />
         </div>
-        <div class="select-menu">
-          <div class="dropdown">
-            <label for="scheme-color">Monochrome</label>
-            <select
-              class="scheme-color"
-              name="scheme-color"
-              id="scheme-color"
-            ></select>
-          </div>
-          <div></div>
-          <!-- <p>Monochrome</p>
-          <i class="icon fa-solid fa-angle-down"></i> -->
+
+        <div class="dropdown">
+          <label id="mode-color" class="mode-color" for="scheme-color"> </label
+          ><select
+            class="scheme-color"
+            name="scheme-color"
+            id="scheme-color"
+          ></select>
         </div>
         <div class="get-btn">
           <button id="get-color">Get color scheme</button>
@@ -43,31 +39,16 @@
       </div>
     </header>
     <main>
-      <div class="colors-container">
+      <div id="colors-container" class="colors-container">
         <div class="colors-palet">
-          <div id="one" class="color">jjjjjjjjjjjjjjjjjjjjjjjjjjjjjj</div>
-          <div class="hex"></div>
-        </div>
-        <div class="colors-palet">
-          <div id="two" class="color-two">jjjjjjjjjjjjjjjjjjjjjjjjjjjjjj</div>
-          <div class="hex"></div>
-        </div>
-        <div class="colors-palet">
-          <div id="three" class="color-three">
-            jjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
-          </div>
-          <div class="hex"></div>
-        </div>
-        <div class="colors-palet">
-          <div id="four" class="color-four">jjjjjjjjjjjjjjjjjjjjjjjjjjjjjj</div>
-          <div class="hex"></div>
-        </div>
-        <div class="colors-palet">
-          <div id="five" class="color-five">jjjjjjjjjjjjjjjjjjjjjjjjjjjjjj</div>
+          <div class="color"></div>
           <div class="hex"></div>
         </div>
       </div>
     </main>
+    <footer>
+      <p style="background-color: blue"></p>
+    </footer>
     <script src="index.js"></script>
   </body>
 </html>
