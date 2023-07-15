@@ -1,16 +1,25 @@
+const listContainer = document.getElementById("list-color");
 let colors = [];
 let newString = "";
+// let monochrome = "monochrome";
+// let monochromeDark = "monochrome-dark";
 
+listContainer.addEventListener("click", (e) => {
+  console.log(e.target.id);
+});
+
+// &monochrome-dark&monochrome-light&analogic&complement&analogic-complement&triad&quad
 const input = document.getElementById("pick-color");
 
-let url = `https://www.thecolorapi.com/scheme?hex=07375b&mode=monochrome&monochrome-dark&monochrome-light&analogic&complement&analogic-complement&triad&quad`;
+let url = `https://www.thecolorapi.com/scheme?hex=07375b&mode=monochrome`;
 
 function getColor() {
   document.getElementById("get-color").addEventListener("mouseup", () => {
     let inputValue = input.value;
     newString = inputValue.substring(1);
     console.log(input.value, inputValue, newString);
-    url = `https://www.thecolorapi.com/scheme?hex=${newString}&mode=monochrome&monochrome-dark&monochrome-light&analogic&complement&analogic-complement&triad&quad`;
+    url = `https://www.thecolorapi.com/scheme?hex=${newString}&mode=${monochrome}`;
+    console.log(url);
     let req = new Request(url);
     sendRequest(req);
   });
